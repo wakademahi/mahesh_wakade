@@ -388,7 +388,7 @@
       </div>
 
       <!-- Progression Flow -->
-      <div style="margin-top: 3.5rem;">
+      <!--<div style="margin-top: 3.5rem;">
         <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.25rem;">Career Progression Flow</h3>
         <div class="career-flow-container">
           <div class="flow-step">
@@ -421,7 +421,7 @@
             <span class="flow-sub">Microfrontends & myNu AI</span>
           </div>
         </div>
-      </div>
+      </div>-->
 
       <!-- 6 Metrics -->
       <div style="margin-top: 3.5rem;">
@@ -458,16 +458,7 @@
     <!-- Featured Projects Section -->
     <section id="projects">
       <span class="section-tag">Portfolio Showcase</span>
-      <div class="projects-filter-row">
-        <h2 class="section-title" style="margin-bottom: 0;">Featured Projects</h2>
-        <div class="filter-tabs">
-          <button class="filter-tab active" onclick="filterProjects('all', this)">All</button>
-          <button class="filter-tab" onclick="filterProjects('Angular', this)">Angular</button>
-          <button class="filter-tab" onclick="filterProjects('Ionic', this)">Ionic</button>
-          <button class="filter-tab" onclick="filterProjects('RxJS', this)">RxJS</button>
-          <button class="filter-tab" onclick="filterProjects('TypeScript', this)">TypeScript</button>
-        </div>
-      </div>
+      <h2 class="section-title">Featured Projects</h2>
 
       <div class="projects-grid" id="projects-grid">
         <!-- Project 1: myeNovation -->
@@ -486,13 +477,6 @@
               <span class="tech-pill">RxJS</span>
               <span class="tech-pill">myNu AI Assistant</span>
             </div>
-          </div>
-          <div class="project-footer">
-            <span style="color: var(--text-muted);">Greentin Solutions</span>
-            <button class="btn-request-demo" onclick="openDemoModal('myenovation')">
-              <span>Request Demo</span>
-              <span class="material-symbols-outlined" style="font-size: 16px;">arrow_forward</span>
-            </button>
           </div>
         </div>
 
@@ -513,13 +497,6 @@
               <span class="tech-pill">Tailwind CSS</span>
             </div>
           </div>
-          <div class="project-footer">
-            <span style="color: var(--text-muted);">Greentin Solutions</span>
-            <button class="btn-request-demo" onclick="openDemoModal('skillmatrix')">
-              <span>Request Demo</span>
-              <span class="material-symbols-outlined" style="font-size: 16px;">arrow_forward</span>
-            </button>
-          </div>
         </div>
 
         <!-- Project 3: PACE -->
@@ -539,13 +516,6 @@
               <span class="tech-pill">SCSS</span>
             </div>
           </div>
-          <div class="project-footer">
-            <span style="color: var(--text-muted);">Greentin Solutions</span>
-            <button class="btn-request-demo" onclick="openDemoModal('pace')">
-              <span>Request Demo</span>
-              <span class="material-symbols-outlined" style="font-size: 16px;">arrow_forward</span>
-            </button>
-          </div>
         </div>
 
         <!-- Project 4: Call Manager App -->
@@ -564,13 +534,6 @@
               <span class="tech-pill">Cloud Telephony API</span>
               <span class="tech-pill">TypeScript</span>
             </div>
-          </div>
-          <div class="project-footer">
-            <span style="color: var(--text-muted);">Greentin Solutions</span>
-            <button class="btn-request-demo" onclick="openDemoModal('callmanager')">
-              <span>Request Demo</span>
-              <span class="material-symbols-outlined" style="font-size: 16px;">arrow_forward</span>
-            </button>
           </div>
         </div>
       </div>
@@ -599,7 +562,7 @@
             </div>
             <div class="project-footer">
               <span style="color: var(--text-muted);">Open Source Experiment</span>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-request-demo">
+              <a href="https://github.com/wakademahi/Practice-Project/tree/main/microfrontend-demo" target="_blank" rel="noopener noreferrer" class="btn-request-demo">
                 <span>View GitHub</span>
                 <span class="material-symbols-outlined" style="font-size: 16px;">arrow_forward</span>
               </a>
@@ -624,7 +587,7 @@
             </div>
             <div class="project-footer">
               <span style="color: var(--text-muted);">Open Source Experiment</span>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-request-demo">
+              <a href="https://github.com/wakademahi/Practice-Project/tree/main/react-list-ui" target="_blank" rel="noopener noreferrer" class="btn-request-demo">
                 <span>View GitHub</span>
                 <span class="material-symbols-outlined" style="font-size: 16px;">arrow_forward</span>
               </a>
@@ -640,26 +603,50 @@
       <h2 class="section-title">Certifications & Continuous Learning</h2>
 
       <div class="projects-grid">
-        <div class="project-card" style="padding: 1.5rem;">
-          <div style="display: flex; align-items: center; gap: 0.75rem;">
-            <span class="material-symbols-outlined" style="color: var(--primary); font-size: 28px;">verified</span>
-            <div>
-              <h3 style="font-size: 1.15rem; margin: 0;">be10x AI Tools & Claude Workshop</h3>
-              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--primary);">Certified Professional</span>
+        <div class="project-card certificate-card" style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 0.75rem;">
+              <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <span class="material-symbols-outlined" style="color: var(--primary); font-size: 28px;">verified</span>
+                <div>
+                  <h3 style="font-size: 1.15rem; margin: 0;">be10x AI Tools & Claude Workshop</h3>
+                  <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--primary);">Certified Professional</span>
+                </div>
+              </div>
+              <span class="project-badge emerald">Verified</span>
             </div>
+            <p style="margin-top: 0.75rem;">be10X Certified Professional. Leveraging generative AI and LLMs for enhanced developer productivity and code generation.</p>
           </div>
-          <p style="margin-top: 0.75rem;">be10X Certified Professional. Leveraging generative AI and LLMs for enhanced developer productivity and code generation.</p>
+          <div class="certificate-action-row" style="margin-top: 1.25rem; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">be10X</span>
+            <button class="btn-secondary" style="padding: 0.45rem 0.9rem; font-size: 0.8rem;" onclick="openCertificateModal('be10x')">
+              <span class="material-symbols-outlined" style="font-size: 16px; color: var(--primary);">visibility</span>
+              <span>View Certificate</span>
+            </button>
+          </div>
         </div>
 
-        <div class="project-card" style="padding: 1.5rem;">
-          <div style="display: flex; align-items: center; gap: 0.75rem;">
-            <span class="material-symbols-outlined" style="color: var(--cyan); font-size: 28px;">verified</span>
-            <div>
-              <h3 style="font-size: 1.15rem; margin: 0;">micro1 AI Interview Performance Certificate</h3>
-              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--cyan);">Top Performance Score</span>
+        <div class="project-card certificate-card" style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 0.75rem;">
+              <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <span class="material-symbols-outlined" style="color: var(--cyan); font-size: 28px;">verified</span>
+                <div>
+                  <h3 style="font-size: 1.15rem; margin: 0;">micro1 AI Interview Performance Certificate</h3>
+                  <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--cyan);">Top Performance Score</span>
+                </div>
+              </div>
+              <span class="project-badge cyan">Top 1%</span>
             </div>
+            <p style="margin-top: 0.75rem;">Had an outstanding performance during micro1's AI Interview, showcasing advanced technical communication and problem-solving skills.</p>
           </div>
-          <p style="margin-top: 0.75rem;">Had an outstanding performance during micro1's AI Interview, showcasing advanced technical communication and problem-solving skills.</p>
+          <div class="certificate-action-row" style="margin-top: 1.25rem; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">Micro1</span>
+            <button class="btn-secondary" style="padding: 0.45rem 0.9rem; font-size: 0.8rem;" onclick="openCertificateModal('micro1')">
+              <span class="material-symbols-outlined" style="font-size: 16px; color: var(--cyan);">visibility</span>
+              <span>View Certificate</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
