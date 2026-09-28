@@ -266,6 +266,62 @@ function closeDemoModal(e) {
   }
 }
 
+
+// --- Certificate Modal Logic ---
+const certificateModal = document.getElementById('certificate-modal');
+const CERTIFICATE_DATA = {
+  be10x: {
+    title: 'be10x AI Tools & Claude Workshop',
+    issuer: 'be10x Certified Professional',
+    image: 'assets/certificate/Certificate.png',
+    downloadName: 'Mahesh_Wakade_be10x_Certificate.png'
+  },
+  micro1: {
+    title: 'micro1 AI Interview Performance Certificate',
+    issuer: 'micro1 Top Performance Score',
+    image: 'assets/certificate/micro1_certificate.jpg',
+    downloadName: 'Mahesh_Wakade_micro1_Certificate.jpg'
+  }
+};
+
+function openCertificateModal(key) {
+  const data = CERTIFICATE_DATA[key];
+  if (!data || !certificateModal) return;
+
+  const titleEl = document.getElementById('cert-modal-title');
+  const issuerEl = document.getElementById('cert-modal-issuer');
+  const imgEl = document.getElementById('cert-modal-image');
+  const downloadEl = document.getElementById('cert-modal-download');
+
+  if (titleEl) titleEl.textContent = data.title;
+  if (issuerEl) issuerEl.textContent = data.issuer;
+  if (imgEl) {
+    imgEl.src = data.image;
+    imgEl.alt = data.title;
+  }
+  if (downloadEl) {
+    downloadEl.href = data.image;
+    downloadEl.download = data.downloadName;
+  }
+
+  certificateModal.classList.add('open');
+}
+
+function closeCertificateModal(e) {
+  if (!e || e.target === certificateModal || e.target.closest('.modal-close-btn') || e.target.closest('.btn-secondary')) {
+    if (certificateModal) certificateModal.classList.remove('open');
+  }
+}
+
+// Close modals on Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    if (certificateModal) certificateModal.classList.remove('open');
+    if (demoModal) demoModal.classList.remove('open');
+    if (resumeModal) resumeModal.classList.remove('open');
+  }
+});
+
 // --- Contact Form Submission ---
 function handleContactSubmit(e) {
   e.preventDefault();
