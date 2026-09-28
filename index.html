@@ -962,6 +962,35 @@
       </div>
     </div>
   </div>
+  
+  <!-- Certificate View Modal -->
+  <div class="modal-overlay" id="certificate-modal" onclick="closeCertificateModal(event)">
+    <div class="modal-card certificate-modal-card" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div>
+          <span id="cert-modal-issuer" style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--primary); text-transform: uppercase;">Credential Verification</span>
+          <h3 id="cert-modal-title" style="margin-top: 0.15rem;">Certificate Preview</h3>
+        </div>
+        <button class="modal-close-btn" onclick="closeCertificateModal()">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+
+      <div class="modal-body" style="padding: 1.25rem;">
+        <div class="certificate-preview-container">
+          <img id="cert-modal-image" src="" alt="Certificate" class="certificate-preview-img" />
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn-secondary" onclick="closeCertificateModal()">Close</button>
+        <a id="cert-modal-download" href="" download="" target="_blank" class="btn-primary" style="text-decoration: none;">
+          <span class="material-symbols-outlined" style="font-size: 16px;">download</span>
+          Download Certificate
+        </a>
+      </div>
+    </div>
+  </div>
 
   <!-- Pure External JavaScript (script.js) -->
   <script src="/script.js"></script>
